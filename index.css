@@ -14,8 +14,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: min(80%,150px);
-    height: 150px;
+    width: min(80%,200px);
+    height: 200px;
     position: relative;
 }
 #clockCont{
@@ -47,14 +47,15 @@ body{
 #hourHand,#minuteHand{
     background: #444444;
     position: absolute;
-    width: 7px;
-    padding-top: 40px;
+    width: 10px;
+    padding-top: 48px;
     bottom: 50%;
     border-radius: 50px;
     transform-origin: bottom;
+    clip-path: polygon(50% 0, 100% 30%, 70% 100%, 30% 100%, 0 30%);
 }
 #minuteHand{
-    padding-top: 57px;
+    padding-top: 62px;
 }
 #secondHand{
     position: absolute;
@@ -76,7 +77,7 @@ body{
 }
 #secondHand #Hand{
     width: 3px;
-    height: 75px;
+    height: 85px;
     background: #ef4c4d;
     position: absolute;
     bottom: 10%;
@@ -90,23 +91,41 @@ body{
     border-radius: 50px;
 }
 .digit1{
-    top: 7%;
+    top: 4%;
     transform: rotate(90deg);
 }
 .digit2{
-    left: 3%;
+    left: 2%;
 }
 .digit3{
-    right: 2%;
+    right: 1%;
 }
 .digit4{
-    bottom: 6%;
+    bottom: 4%;
     transform: rotate(90deg);
 }
+.nums{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background: none;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.digit5{transform: rotate(31deg);}
+.digit10{transform: rotate(61deg);}
+.digit20{transform: rotate(121deg);}
+.digit25{transform: rotate(151deg);}
+.digit35{transform: rotate(211deg);}
+.digit40{transform: rotate(241deg);}
+.digit50{transform: rotate(301deg);}
+.digit55{transform: rotate(331deg);}
+
 #head{
     position: absolute;
     width: 120%;
-    top: -5%;
+    top: 1%;
     height: 70px;
 }
 #leftDing,#rightDing{
@@ -115,7 +134,7 @@ body{
     transform: rotateZ(-30deg);
 }
 #rightDing{
-    right: -73%;
+    right: -80%;
     transform: rotateZ(30deg);
 }
 #leftDing span:nth-child(1),#rightDing span:nth-child(1){
@@ -138,7 +157,7 @@ body{
     position: absolute;
     width: 100%;
     height: 50px;
-    bottom: -10px;
+    bottom: -5px;
     padding: 0 30px;
     z-index: -30;
 }
