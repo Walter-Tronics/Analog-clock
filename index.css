@@ -125,7 +125,7 @@ body{
 #head{
     position: absolute;
     width: 120%;
-    top: 1%;
+    top: 4%;
     height: 70px;
 }
 #leftDing,#rightDing{
@@ -134,7 +134,7 @@ body{
     transform: rotateZ(-30deg);
 }
 #rightDing{
-    right: -80%;
+    right: -79%;
     transform: rotateZ(30deg);
 }
 #leftDing span:nth-child(1),#rightDing span:nth-child(1){
