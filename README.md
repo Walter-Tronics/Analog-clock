@@ -1,5 +1,5 @@
 # Analog-clock
-Stylish analog clock programmed with JavaScript
+Stylish analog clock programmed with JavaScript language
 ## Languages:
 * HTML
 * CSS
