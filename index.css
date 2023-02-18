@@ -20,6 +20,9 @@ body{
 }
 #clockCont{
     display: grid;
+    -webkit-display: grid;
+    -moz-display: grid;
+    -o-display: grid;
     place-items: center;
     height: 100%;
     width: 100%;
