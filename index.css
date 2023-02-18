@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Snowy;
-    src: url('Snowy-Season.ttf');
+    font-family: neontech;
+    src: url('NeonTech.ttf');
 }
 *{
     margin: 0;
@@ -182,8 +182,8 @@ body{
 }
 .digital{
     position: absolute;
-    bottom: -10%;
-    font-family: snowy;
-    color: #444444;
+    bottom: -12%;
+    font-family: neontech;
+    color: rgba(255, 255, 255, .8);
     font-size: 1.2rem;
 }
