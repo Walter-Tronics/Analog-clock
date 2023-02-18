@@ -1,9 +1,9 @@
 let hourHand = document.querySelector('#hourHand'),
 minuteHand = document.querySelector('#minuteHand'),
 secondHand = document.querySelector('#secondHand'),
+digitalTime = document.querySelector('.digital'),
 curTime,
-digitTime,
-digitalTime = document.querySelector('.digital');
+digitTime;
 
 //Setting the time function
 function setTime() {
@@ -18,10 +18,16 @@ function setTime() {
     //set a new date and assign the degree to the second hand
     secondHand.style.transform = `rotate(${curTime.getSeconds() * 6}deg)`;
 
+    //Digital clock display
     let timeHour = curTime.getHours(),
     timeMin = curTime.getMinutes();
     if (timeHour < 10) timeHour = `0${timeHour}`;
+    if (timeMin < 10) timeMin = `0${timeMin}`;
+    
+    //Check for AM and PM switching
     (timeHour < 12) ? digitTime = `${timeHour}:${timeMin} AM` : digitTime = `${timeHour}:${timeMin} PM`;
+
+    //Appending the clock to the HTML
     digitalTime.innerHTML = digitTime;
 }
 
