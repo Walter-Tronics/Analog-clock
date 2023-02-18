@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Snowy;
+    src: url('Snowy-Season.ttf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -175,4 +179,11 @@ body{
 #stand span:nth-child(1){
     right: 30px;
     transform: rotateZ(-30deg);
+}
+.digital{
+    position: absolute;
+    bottom: -10%;
+    font-family: snowy;
+    color: #444444;
+    font-size: 1.2rem;
 }
