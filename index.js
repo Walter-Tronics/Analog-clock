@@ -3,6 +3,7 @@ minuteHand = document.querySelector('#minuteHand'),
 secondHand = document.querySelector('#secondHand'),
 digitalTime = document.querySelector('.digital'),
 curTime,
+Hour,
 digitTime;
 
 //Setting the time function
@@ -21,11 +22,15 @@ function setTime() {
     //Digital clock display
     let timeHour = curTime.getHours(),
     timeMin = curTime.getMinutes();
-    if (timeHour < 10) timeHour = `0${timeHour}`;
+
+    //Check for time digit switching
+    (timeHour >= 12) ? Hour = timeHour - 12 :
+    Hour = timeHour;
+    if (Hour < 10) Hour = `0${Hour}`;
     if (timeMin < 10) timeMin = `0${timeMin}`;
     
     //Check for AM and PM switching
-    (timeHour < 12) ? digitTime = `${timeHour}:${timeMin} AM` : digitTime = `${timeHour}:${timeMin} PM`;
+    (timeHour < 12) ? digitTime = `${Hour}:${timeMin} AM` : digitTime = `${Hour}:${timeMin} PM`;
 
     //Appending the clock to the HTML
     digitalTime.innerHTML = digitTime;
