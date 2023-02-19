@@ -182,8 +182,8 @@ body{
 }
 .digital{
     position: absolute;
-    bottom: -12%;
+    bottom: -10%;
     font-family: neontech;
     color: rgba(255, 255, 255, .8);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
