@@ -5,4 +5,4 @@ Stylish analog clock programmed with JavaScript language
 * CSS
 * JavaScript
 ## https://walt-analog-clock.netlify.app
-![image](https://user-images.githubusercontent.com/81018331/213888830-97922d81-cb88-4cb3-8992-48a6bccd6d97.png)
+![image](https://user-images.githubusercontent.com/81018331/220134516-2c1360f1-1de5-492c-a769-091731a07b09.png)
